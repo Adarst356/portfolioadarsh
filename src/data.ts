@@ -50,6 +50,7 @@ export const experienceData: Experience[] = [
     id: "exp-1",
     role: "Flutter & Android Developer",
     company: "Tech FusionCode Technologies Pvt. Ltd.",
+    companyUrl: "https://fusioncodes.in/",
     period: "April 2025 – Present",
     bullets: [
       "Designed, developed, and maintained production-ready mobile applications using Flutter and native Android.",

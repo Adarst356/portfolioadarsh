@@ -49,7 +49,18 @@ export default function Experience() {
                           {exp.role}
                         </h4>
                         <p className="text-xs text-cyan-400 font-medium font-mono mt-0.5">
-                          {exp.company}
+                          {exp.companyUrl ? (
+                            <a 
+                              href={exp.companyUrl} 
+                              target="_blank" 
+                              rel="noopener noreferrer" 
+                              className="hover:underline hover:text-cyan-300 transition-colors inline-flex items-center gap-1"
+                            >
+                              {exp.company}
+                            </a>
+                          ) : (
+                            exp.company
+                          )}
                         </p>
                       </div>
                       <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-slate-950 text-[10px] font-semibold text-slate-400 border border-slate-900 font-mono">
